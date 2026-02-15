@@ -108,9 +108,10 @@ The dataset contains **10,000 records** with the following features:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/car-insurance-claim.git
+git clone https://github.com/AmirHSoukhteh/car-insurance-claim.git
 cd car-insurance-claim
 ```
+ or if you wish using kaggle, click this (link)[https://www.kaggle.com/code/amirhossains/car-insurance-analysis]
 
 2. Install dependencies:
 ```bash
@@ -140,25 +141,9 @@ See `requirements.txt` for specific versions.
 
 | Model | Accuracy | Notes |
 |-------|----------|-------|
-| Decision Tree | ~78% | Fast, interpretable |
-| SVM (Default) | ~76% | Good baseline |
+| Decision Tree | ~81% | Fast, interpretable |
+| SVM (Default) | ~77% | Good baseline |
 | SVM (Optimized) | ~80% | Best performance after GridSearch |
-
-### Top Predictive Features
-
-1. **VEHICLE_OWNERSHIP** (28.8%) - Strongest predictor
-2. **PAST_ACCIDENTS** (19.3%) - Second most important
-3. **VEHICLE_YEAR** (15.6%) - Older vehicles correlate with claims
-4. **POSTAL_CODE** (9.7%) - Location matters
-5. **DRIVING_EXPERIENCE** (9.5%) - Experience level impacts claims
-
-## Key Findings
-
-✅ **Vehicle ownership** is the strongest predictor of insurance claims  
-✅ **Past accident history** significantly correlates with future claims  
-✅ **Older vehicles** (before 2015) show higher claim rates  
-✅ **Location** (postal code) influences claim probability  
-✅ **GridSearch optimization** improved SVM performance by ~4%
 
 ## Machine Learning Techniques Used
 
@@ -168,24 +153,6 @@ See `requirements.txt` for specific versions.
 - **Hyperparameter Tuning**: GridSearchCV with 5-fold cross-validation
 - **Feature Engineering**: One-hot encoding for categorical variables
 - **Feature Selection**: Feature importance ranking from Decision Tree
-
-## Business Applications
-
-This model can help insurance companies:
-1. **Risk Assessment**: Identify high-risk customers
-2. **Premium Pricing**: Adjust premiums based on risk factors
-3. **Fraud Detection**: Flag suspicious claim patterns
-4. **Customer Segmentation**: Group customers by risk profile
-5. **Resource Allocation**: Focus on high-risk policyholders
-
-## Future Improvements
-
-- Try ensemble methods (Random Forest, XGBoost, Gradient Boosting)
-- Implement deep learning (Neural Networks)
-- Add more features (weather data, traffic patterns)
-- Use SMOTE for more sophisticated balancing
-- Deploy model as web API
-- A/B testing in production environment
 
 ## License
 
