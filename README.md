@@ -111,7 +111,7 @@ The dataset contains **10,000 records** with the following features:
 git clone https://github.com/AmirHSoukhteh/car-insurance-claim.git
 cd car-insurance-claim
 ```
- or if you wish using kaggle, click this (link)[https://www.kaggle.com/code/amirhossains/car-insurance-analysis]
+ or if you wish using kaggle, click this [link](https://www.kaggle.com/code/amirhossains/car-insurance-analysis)
 
 2. Install dependencies:
 ```bash
